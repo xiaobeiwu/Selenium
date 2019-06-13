@@ -19,6 +19,12 @@ public class TestngDemo2Test {
 	
 	}
 	
+	@BeforeTest
+	public void beforeTest() {
+		
+		System.out.println("TestngDemo2-------beforeTest");
+	}
+	
 	@BeforeClass
 	public void beforeClass() {
 		System.out.println("TestngDemo2-------BeforeClass");
@@ -37,17 +43,6 @@ public class TestngDemo2Test {
 	
 	}
 	
-	@BeforeTest
-	public void beforeTest() {
-		
-		System.out.println("TestngDemo2-------beforeTest");
-	}
-	
-	@AfterTest
-	public void afterTest() {
-		System.out.println("TestngDemo2-------afterTest");
-	
-	}
 	
 	@AfterMethod
 	public void afterMethod() {
@@ -58,6 +53,12 @@ public class TestngDemo2Test {
 	@AfterClass
 	public void afterClass() {
 		System.out.println("TestngDemo2-------afterClass");
+	
+	}
+	
+	@AfterTest
+	public void afterTest() {
+		System.out.println("TestngDemo2-------afterTest");
 	
 	}
 	

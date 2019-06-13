@@ -25,6 +25,12 @@ public class TestngDemo1Test {
 
 	}
 	
+	@BeforeTest
+	public void beforeTest() {
+		
+		System.out.println("TestngDemo1-------beforeTest");
+	}
+	
 	@BeforeClass
 	public void beforeClass() {
 		System.out.println("TestngDemo1-------BeforeClass");
@@ -34,6 +40,12 @@ public class TestngDemo1Test {
 	@BeforeMethod
 	public void beforeMethod() {
 		System.out.println("TestngDemo1-------BeforeMethod");
+
+	}
+	
+	@AfterMethod
+	public void afterMethod() {
+		System.out.println("TestngDemo1-------afterMethod");
 
 	}
 	
@@ -72,27 +84,17 @@ public class TestngDemo1Test {
 
 	}
 	
-	@BeforeTest
-	public void beforeTest() {
-		
-		System.out.println("TestngDemo1-------beforeTest");
-	}
-	
-	@AfterTest
-	public void afterTest() {
-		System.out.println("TestngDemo1-------afterTest");
-
-	}
-	
-	@AfterMethod
-	public void afterMethod() {
-		System.out.println("TestngDemo1-------afterMethod");
-
-	}
 	
 	@AfterClass
 	public void afterClass() {
 		System.out.println("TestngDemo1-------afterClass");
+
+	}
+	
+	
+	@AfterTest
+	public void afterTest() {
+		System.out.println("TestngDemo1-------afterTest");
 
 	}
 	
